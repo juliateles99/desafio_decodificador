@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+</head>
+<body>
+    <main class="main-container">
+        <header class="header">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Mensagens Decodificadas</h1>
+        </header>
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-text" placeholder="Digite seu texto"></textarea>
+                <p><ion-icon name="alert-circle-outline"></ion-icon> Apenas letras minúsculas e sem acento.</p>
+                <div class="container-btn">
+                    <button onclick="encrypt()" class="btn-criptografar">Criptografar</button>
+                    <button onclick="decrypt()" class="btn-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+            <div id="output" class="output"> 
+                <img id="output-image" src="images/imgNotFound.png" alt="Imagem não encontrada">
+                <h2>Sua mensagem aparecerá aqui</h2>
+                <span>Digite um texto que deseja Criptografar ou Descriptografar</span>
+            </div>         
+        </div>
+        <footer class="footer">
+            <div class="icons">
+                <a href="https://github.com/juliateles99" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/devjuliateles/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+            <h3>Desenvolvido por Júlia Teles</h3>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

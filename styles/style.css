@@ -1,0 +1,235 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #2E2B65;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header img {
+    width: auto;
+    height: auto;
+}
+
+/* Container de entrada */
+.container-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 5%;
+    margin-bottom: 10px;
+}
+
+.container-input .input {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    color: white;
+    margin-right: 10px; 
+}
+
+.container-input p {
+    margin: 10px;
+    font-size: 12px;
+}
+
+/* Texto de entrada */
+#input-text {
+    width: 100%;
+    height: 200px; 
+    font-size: 20px;
+    background: white;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 20px;
+    border-radius: 20px;
+    resize: none;
+}
+
+#input-text::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#input-text::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+}
+
+/* Saída */
+.output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    margin-left: 10px; 
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box; 
+    overflow: auto; 
+}
+
+#output-text {
+    flex: 1;
+    border: none;
+    background: transparent; 
+    resize: none; 
+}
+
+#output-text::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#output-text::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+}
+
+.output textarea {
+    resize: none;
+}
+
+.output h2 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.output span {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+
+.output img {
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+/* Container de entrada */
+.container-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 5%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container-input .input {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    color: white;
+    margin-right: 10px; 
+}
+
+.container-input p {
+    margin: 10px;
+    font-size: 12px;
+}
+
+/* Botões */
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 50px;
+}
+
+.container-btn button,
+.btn-copiar {
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: purple;
+    width: 150px;
+    height: 50px;
+    margin: 6px; 
+    cursor: pointer;
+    transition: all 0.5s; 
+}
+
+.container-btn button:hover,
+.btn-copiar:hover {
+    background-color: pink;
+    border: 2px solid purple;
+    color: white; 
+}
+
+.btn-copiar {
+    justify-content: center;
+    align-items: center; 
+    margin-left: 100px;
+
+}
+
+/* Rodapé */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    color: white;
+    background-color: #2E2B65;
+}
+
+.footer h3 {
+    font-size: 16px;
+}
+
+/* Ícones */
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .container-input {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container-input .input {
+        margin-bottom: 0;
+    }
+
+    #input-text {
+        height: 330px;
+    }
+
+    .output {
+        margin-left: 100px;
+    }
+
+    #output-text {
+        min-height: 400px;
+    }
+}
